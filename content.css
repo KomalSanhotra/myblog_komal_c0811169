@@ -31,11 +31,10 @@ header{
     border: 2px solid lightcyan;
 }
 .nav li a{
-    font-family: "Poppins",sans-serif;
     text-decoration: none;
     padding: 20px;
     font-weight: bold;
-    color: #fff;
+    color: black;
 }
 
 
@@ -48,10 +47,6 @@ section .floating-image{
 .container h1{
     font-size: 3em;
     color: black;
-}
-
-.container .wasaga{
-    text-align: left;
 }
 section .floating-image.left{
     font-style: normal;
