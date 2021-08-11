@@ -1,0 +1,324 @@
+header{
+	background-image:linear-gradient(to right, rgba(0,100,0,0), rgba(100,1,1,1));
+    background-color: #880;
+}
+.logo{
+    padding-top:10px ;
+    text-align: left;
+}
+.tagline h2{
+    color: black;
+    text-align: left;
+}
+.nav{
+    background-color: gray;
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    display: inline-block;
+    border: 1px solid #CECECE;
+    border-right: 1PX solid #fff;
+    padding: 2px;
+}
+.nav li:hover{
+    position: relative;
+    padding: 1px;
+    border: 2px solid lightcyan;
+}
+.nav li a{
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+/*Section for nav bar start*/
+
+section .floating-image{
+    max-width:400px ;
+}
+.container h1{
+    font-size: 3em;
+    color: black;
+}
+
+.container .wasaga{
+    text-align: left;
+}
+section .floating-image.left{
+    font-style: normal;
+   /* float: left;*/
+    margin-top: 5px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}
+
+section .floating-image.right{
+    font-style: normal;
+   /*   float: right;*/
+    margin-top: 5px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}
+
+#rightsection{
+   float: right;
+    width: 40%;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+/*Section for nav bar ends*/
+#leftfloat{
+    margin-top: 40px;
+    float: left;
+    width: 30%;
+}
+#rightfloat ul li a{
+    color: black;
+}
+#rightfloat ul li a:hover{
+    color:red;
+}
+/*footer*/
+footer {
+    clear: both;
+    margin-bottom: 0;
+  }
+  /*footer starts*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: gray;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .foot-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .sec{
+    margin-right: 30px;
+}
+.aboutus{
+    width: 40%;
+}
+.aboutus h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.aboutus h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: black;
+}
+
+.aboutus p{
+    color: black;
+}
+
+
+
+.contact{
+    width: calc(35% - 60%);
+    margin-right: 0 !important;
+}
+.info{
+    position: relative;
+}
+.info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.info li span{
+    color: black;
+}
+.info li a{
+    color: black;
+    text-decoration:  none;
+}
+.info li a:hover{
+    color: #fff;
+}
+
+
+.info .address{
+    font-weight: 500;
+    
+}
+.info .address:hover{
+    color: #fff;
+}
+
+.seccontact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+ .seccontact h2::before{
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: black;
+    }
+/* Footer ends*/.copyright{
+    width: 100%;
+    background: #111;
+    padding: 8px 100px;
+    text-align: center;
+    color: #fff;
+}
+/*footer Ends*/
+
+
+/* The sidebar menu */
+.sidenav {
+    height: 100vh; 
+    width: 300px; 
+     float: left;
+    top: 205px;
+   /* left: 0;*/
+    background-color: #777; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+  }
+  .sidenav .goa{
+      padding-right: 10px;
+  }
+  .sidenav {
+      text-decoration: underline;
+      
+  }
+  .sidenav h2{
+      color: #fff;
+      padding-left: 15px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; 
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  /*Slide show script*/
+   * {box-sizing: border-box;}
+    img 
+    {
+        vertical-align: middle;
+    }
+    
+ .mySlides {display: none;}
+  /* Slideshow container */
+.slideshow-container
+    {
+  max-width: 3200px;
+  position:relative;
+      margin: auto;
+}
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position:relative;
+  width: 100%;
+  max-width: 300px;  
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;/*color of activated dot*/
+}
+{box-sizing:border-box}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

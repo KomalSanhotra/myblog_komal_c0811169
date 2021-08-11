@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="stylesheet" href="content.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+	<body>
+    <header>
+        <div class="logo">
+          <img src="logo.png" width="200px" height="140px"/>
+        </div>
+        <div class="tagline">
+          <h2>Everyone eats and drinks; yet only few appriciates the taste of food!! </h2>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="content1.html">Bevarages</a></li>
+          <li><a href="content2.html">Cuisine</a></li>
+          <li><a href="index.html.html">About Us</a></li>
+        </ul>
+       </div>
+    </header>
+	  
+	<section id="rightsection">
+        <p>Blend to a smooth thick milkshake. Taste and if the sugar is less, then you can add more. If the mangoes are very sweet, you can completely skip the sugar. 
+		Since both the mangoes and milk were chilled, I did not add any ice cubes. You can add some ice cubes too while blending.
+Pour this thick mango milkshake in glasses till you have enough space at the top for ice cream scoops.
+Place one or two vanilla or mango ice cream scoops.
+ Top with the sliced dry fruits and chopped mangoes. Garnish with the glazed cherries.
+Serve mango mastani immediately with a spoon as well as straw.
+
+      
+    </section>
+<section id="rightsection">
+<div class="slideshow-container" style="padding-top:9px;">
+         
+        <div class="mySlides"><img src="drink.jpg" style="width:100%; height:70%;" > </div>
+      <div class="mySlides"><img src="custard.jpg" style="width:100%; height:70%;" >  </div>
+      
+      <div class="mySlides">
+          
+          <img src="drink1.jpg" style="width:100% ;  height: 70%;"> </div>
+        </div>
+       </div>
+</div>  <br>
+   <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+        <p>Slice a few dry fruits like pistachios, almonds and cashews. Keep them aside with 4 to 5 glazed cherries.
+ Peel, chop 3 large mangoes and add them to the blender or mixer jar. Instead of fresh mangoes, you can also use mango pulp or puree.
+ About 3 to 3.5 cups of mango pulp or puree can be used. Later, just add milk accordingly, based on the consistency of the pulp or puree.
+Reserve 2 to 3 tbsp of chopped mangoes aside for topping the mastani drink later.
+Add 2 to 3 tbsp sugar in the blender jar.
+Add 1.5 cups full cream milk.
+
+
+    </section>
+
+    <!-- Side navigation -->
+ <div class="sidenav">
+  <h2>More Shakes:</h2>
+  <a href="drink.jpg"><img src="drink.jpg"  width="60px" height="50px"/>Strawberry</a>
+  <a href="drink1.jpg" ><img  src="drink1.jpg" width="60px" height="50px"/>Banana</a>
+  <a href="drink2.jpg"><img src="drink2.jpg"  width="60px" height="50px"/>Mango</a>
+  <a href="pdf.pdf"><img src="iconpdf.png"  width="60px" height="50px"/>PDF</a>
+  <a href="loud.mp3"><img src="iconaudio.png"  width="60px" height="50px"/>Audio</a>
+</div>
+
+    
+    
+    <!--footer-->
+    <footer>
+      <div class="foot-container">
+          <div class="secaboutus">
+              <h2>About Us</h2>
+              <p>
+			This is a website for those people, who want to try something new and different according to choice.
+              </p>
+          </div>
+          
+          <div class="seccontact">
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                   <p><a href="tel:+1 123-456-9876">+1 123-456-9876</a><br>
+                      <a href="tel:+1 987-765-5432">+1 987-765-5432</a></p>
+                </li>
+                <li>
+                    <p><a href="mailto:foodndcuisine@gmail.com">foodndcuisine@gmail.com</a></p>
+                    
+                </li>
+            </ul>
+        </div>
+      </div>
+  </footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+		         <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.padding = "2px 2px";
+  } else {
+    document.getElementById("navbar").style.padding = "2px 2px";
+  }
+}
+
+</script>
+         </body>
+</html> 
+
+
+
+
+
+
+
+
